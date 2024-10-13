@@ -1,1 +1,21 @@
+header.navbar-container {
+    width: 100%;
+    max-width: auto;
+    padding-block: 1rem;
+    margin-inline: auto;
+    background-color: #181A14;
 
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo img{
+    width: 150px;
+    margin-left: 40px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}

@@ -1,25 +1,60 @@
-<!DOCTYPE html><html>
-  <head>
-	 <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>RyuuNime</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
 
-  <body>
-    <header class="navbar-container">
-      <div class="logo">
-        <a href="#"></a>
-        <img src="assets/images/Ryuunime.png" alt="RyuuNime">
-      </div>
-    <nav>
-      <ul>
-        <li><a href="#">Beranda</a></li>
-        <li><a href="#">Naruto</a></li>
-        <li><a href="#">Bluelock</a></li>
-        <li><a href="#">Lycoris Recoil</a></li>
-        <li><a href="#">Tentang Kami</a></li>
-      </ul>
-    </nav>
-    </header>
-  </body>
+header.navbar-container {
+    width: 100%;
+    max-width: auto;
+    padding-block: 1rem;
+    margin-inline: auto;
+    background-color: #181A14;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    z-index: 9999;
+}
+
+header.navbar-container .logo img{
+    width: 150px;
+    margin-left: 40px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header.navbar-container .nav-list ul{
+    padding-left: 0;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem 1rem;
+}
+
+header.navbar-container .nav-list li {
+    list-style-type: none;
+    display: inline;
+}
+
+header.navbar-container .nav-list li a {
+    padding: 0.5rem 1.5rem;
+    border-radius: 500px;
+
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+
+    transition: all0.2 ease-in-out;
+}
+
+header.navbar-container .nav-list li:hover a {
+    background-color: #165394;
+    color: rgb(255, 255, 255);
+    border-radius: 10%;
+}

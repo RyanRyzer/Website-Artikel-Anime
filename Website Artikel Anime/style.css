@@ -15,11 +15,13 @@ header.navbar-container {
     gap: 8px;
     align-items: center;
 
+    position: sticky;
+    top: 0;
     z-index: 9999;
 }
 
 header.navbar-container .logo img{
-    width: 150px;
+    width: 80px;
     margin-left: 40px;
 }
 
@@ -105,16 +107,25 @@ footer {
 
 .featured-image {
     max-width: 100%;
-    max-height: 100%;
+    width: 100%;
+    height: 300px;
     object-fit: cover;
     object-position: center;
   }
 
 .artikel {
+    flex: 1;
+    display: flex;
+    margin-right: 10px;
     box-shadow: 0 4px 8px 0 rgba(255, 83, 83, 0.2);
     border-radius: 5px;
     padding: 20px;
     background-color: #473030;
+    flex-direction: column;
+  }
+
+  .artikel p {
+    margin-bottom: 1px;
   }
 
 table {
@@ -134,8 +145,6 @@ aside {
     display: flex;
     flex-flow: column nowrap;
     gap: 1rem 2rem;
-    flex: 1;
-    margin-right: 20px;
   }
 
   nav {
@@ -143,6 +152,23 @@ aside {
     position: sticky;
     top: 0;
   }
+
+  .genre {
+    display: inline-block;
+    background-color: #ffcc00;
+    color: #333;
+    padding: 3px 8px;
+    margin-right: 5px;
+    border-radius: 12px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.genre:hover {
+    background-color: #ff9900;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
 
   @media screen and (max-width: 1000px) {
     #content, aside {

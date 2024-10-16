@@ -61,9 +61,7 @@ header.navbar-container .nav-list li a {
 }
 
 header.navbar-container .nav-list li:hover a {
-    background-color: #165394;
-    color: rgb(255, 255, 255);
-    border-radius: 10%;
+    color: rgb(227, 177, 177);
 }
 
 main {
@@ -124,6 +122,24 @@ footer {
     flex-direction: column;
   }
 
+  .image-container {
+    position: relative;
+    display: inline-block;
+  }
+
+  .image-container .rating {
+    position: absolute;
+    bottom: 10px;
+    right: 10px; 
+    background-color: rgba(0, 0, 0, 0.399);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    z-index: 10;
+}
+
   .artikel p {
     margin-bottom: 1px;
   }
@@ -162,6 +178,14 @@ aside {
     border-radius: 12px;
     font-size: 0.9rem;
     font-weight: bold;
+}
+
+.table-aside th {
+  color: #ffffff;
+}
+
+.table-aside td.content-aside {
+  color: #9c9dcf;
 }
 
 .genre:hover {

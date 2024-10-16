@@ -218,4 +218,17 @@ aside {
     main aside {
       align-self: stretch;
     }
+
+    .genre {
+      margin: 10px 5px;
+    }
+
+    header.navbar-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  header.navbar-container .nav-list ul {
+      justify-content: center;
+  }
   }

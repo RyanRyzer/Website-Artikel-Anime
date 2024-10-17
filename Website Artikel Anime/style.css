@@ -167,6 +167,7 @@ aside {
     max-width: 300px;
     flex-shrink: 0;
     top: 0;
+    padding-top: 320px;
   }
 
 .content {

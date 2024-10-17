@@ -152,7 +152,8 @@ table {
 aside {
     box-shadow: 1px;
     flex: 0;
-    width: 30%;
+    width: 25%;
+    flex-shrink: 0;
   }
 
 .content {
@@ -162,6 +163,57 @@ aside {
     flex-flow: column nowrap;
     gap: 1rem 2rem;
   }
+
+  .anime-list {
+    margin-bottom: 20px;
+  }
+
+  .anime-container {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .anime-item {
+    position: relative;
+    width: 150px;
+    height: 220px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+  .anime-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 4px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+
+  .anime-item:hover img {
+    transform: scale(1.05);
+    opacity: 0.8;
+}
+
+  .anime-item p {
+    margin-top: 5px;
+    font-size: 14px;
+    color: white;
+}
+
+.anime-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  font-size: 12px;
+  text-align: center;
+  padding: 5px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
 
   nav {
     padding: 5px;

@@ -71,6 +71,7 @@ main {
     align-items: flex-start;
     width: 100vw;
     height: 100vh;
+    gap: 10px;
 
     width: 100%;
     margin-inline: auto;
@@ -115,11 +116,21 @@ footer {
     flex: 1;
     display: flex;
     margin-right: 10px;
+    margin-bottom: 20px;
     box-shadow: 0 4px 8px 0 rgba(255, 83, 83, 0.2);
     border-radius: 5px;
     padding: 20px;
     background-color: #473030;
     flex-direction: column;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
   }
 
   .image-container {
@@ -151,14 +162,16 @@ table {
 
 aside {
     box-shadow: 1px;
-    flex: 0;
+    flex: 1;
     width: 25%;
+    max-width: 300px;
     flex-shrink: 0;
+    top: 0;
   }
 
 .content {
-    width: 70%;
-    flex: 5;
+    width: 75%;
+    flex: 3;
     display: flex;
     flex-flow: column nowrap;
     gap: 1rem 2rem;
@@ -171,10 +184,22 @@ aside {
   .anime-container {
     display: flex;
     gap: 1rem;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 10px;
+  }
+
+  .anime-container::-webkit-scrollbar {
+    height: 8px;
+  } 
+
+  .anime-container::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
   }
 
   .anime-item {
+    flex: 0 0 auto;
     position: relative;
     width: 150px;
     height: 220px;

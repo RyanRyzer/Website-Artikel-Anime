@@ -194,6 +194,17 @@ aside {
     padding-bottom: 10px;
   }
 
+  .artikel, .card, .anime-item {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease-in-out;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
   .anime-container::-webkit-scrollbar {
     height: 8px;
   } 

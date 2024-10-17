@@ -183,8 +183,11 @@ aside {
   }
 
   .anime-container {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
     display: flex;
-    gap: 1rem;
+    gap: 0.5rem;
     flex-wrap: nowrap;
     overflow-x: auto;
     padding-bottom: 10px;

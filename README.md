@@ -15,9 +15,9 @@
   Display dynamic anime ratings in real-time.
 
 ## **🛠️ Technologies Used**
-- **HTML5**:  
+- **HTML**:  
   Markup for the structure of the webpage.
-- **CSS3**:  
+- **CSS**:  
   Custom styles including flexbox for layout and media queries for responsiveness.
 - **JavaScript**:  
   Adds interactivity to the website (scroll effects, hover effects, theme toggle, etc.).

@@ -9,10 +9,17 @@ header.navbar-container {
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
-    background-color: #303427;
+    background-color: transparent;
     position: sticky;
     top: 0;
     z-index: 9999;
+    transition: background-color 0.3s ease-in-out;
+    border-bottom: 0.5px solid #333
+}
+
+header.navbar-container.scrolled {
+  background-color: #333;
+  border-bottom: 2px solid transparent
 }
 
 header.navbar-container .logo {

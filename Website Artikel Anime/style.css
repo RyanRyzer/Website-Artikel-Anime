@@ -5,24 +5,72 @@
 }
 
 header.navbar-container {
-    width: 100%;
-    max-width: 100%;
-    padding-block: 1px;
-    margin-inline: auto;
-    background-color: #303427;
-
     display: flex;
-    gap: 8px;
     align-items: center;
-
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #303427;
     position: sticky;
     top: 0;
     z-index: 9999;
 }
 
-header.navbar-container .logo img{
-    width: 80px;
-    margin-left: 40px;
+header.navbar-container .logo {
+    display: flex;
+    align-items: center;
+}
+
+header.navbar-container .logo img {
+    width: 120px;
+    height: auto;
+    margin-left: 20px;
+}
+
+header.navbar-container nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+header.navbar-container .nav-list {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-grow: 1;
+}
+
+header.navbar-container .nav-list li {
+    list-style-type: none;
+}
+
+header.navbar-container .nav-list li a {
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    font-size: 1rem;
+    color: #ffffff;
+    transition: color 0.2s ease-in-out;
+}
+
+header.navbar-container .nav-list li:hover a {
+    color: rgb(227, 177, 177);
+}
+
+header.navbar-container .search-form {
+    margin-left: auto;
+}
+
+header.navbar-container .search-form input[type="search"] {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.informasi p {
+    display: flex;
+    gap: 10px;
+    text-align: left;
+    line-height: 1.5;
 }
 
 body {
@@ -33,35 +81,6 @@ body {
     color: #ffffff;
     flex-direction: column;
     display: flex;
-}
-
-header.navbar-container .nav-list ul{
-    padding-left: 0;
-
-    display: flex;
-    justify-content: space-between;
-    gap: 2rem 1rem;
-}
-
-header.navbar-container .nav-list li {
-    list-style-type: none;
-    display: inline;
-}
-
-header.navbar-container .nav-list li a {
-    padding: 0.5rem 1.5rem;
-    border-radius: 500px;
-
-    text-decoration: none;
-    font-size: 1.05rem;
-    font-weight: 500;
-    color: rgb(255, 255, 255);
-
-    transition: all0.2 ease-in-out;
-}
-
-header.navbar-container .nav-list li:hover a {
-    color: rgb(227, 177, 177);
 }
 
 main {
@@ -82,8 +101,43 @@ h2, h3 {
     color: #ffffff;
   }
 
+.coming-container {
+    margin: 0 auto;
+    width: 70%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.coming {
+    width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    padding: 10px;
+}
+
+.coming-container h4 {
+    margin-bottom: 10px;
+}
+
+.coming img {
+    width: 10%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid rgb(180, 33, 33);
+    transition: all ease-in-out 0.5s;
+}
+
+.coming img:hover {
+    width: 25%;
+}
+
 footer {
-    padding: 20px;
+    padding: 5px;
     color: white;
     opacity: 75%;
     background-color: #332a2a;
@@ -167,7 +221,7 @@ aside {
     max-width: 300px;
     flex-shrink: 0;
     top: 0;
-    padding-top: 360px;
+    padding-top: 500px;
   }
 
 .content {
@@ -204,16 +258,16 @@ aside {
     transform: translateY(0);
 }
 
-  .anime-container::-webkit-scrollbar {
+.anime-container::-webkit-scrollbar {
     height: 8px;
   } 
 
-  .anime-container::-webkit-scrollbar-thumb {
+.anime-container::-webkit-scrollbar-thumb {
     background-color: rgba(255, 255, 255, 0.3);
     border-radius: 10px;
   }
 
-  .anime-item {
+.anime-item {
     flex: 0 0 auto;
     position: relative;
     width: 150px;
@@ -223,7 +277,7 @@ aside {
     margin: 10px;
 }
 
-  .anime-item img {
+.anime-item img {
     width: 100%;
     height: auto;
     object-fit: cover;
@@ -231,12 +285,12 @@ aside {
     transition: transform 0.3s ease, opacity 0.3s ease;
   }
 
-  .anime-item:hover img {
+.anime-item:hover img {
     transform: scale(1.05);
     opacity: 0.8;
 }
 
-  .anime-item p {
+.anime-item p {
     margin-top: 5px;
     font-size: 14px;
     color: white;
@@ -256,13 +310,13 @@ aside {
   border-bottom-right-radius: 8px;
 }
 
-  nav {
+nav {
     padding: 5px;
     position: sticky;
     top: 0;
   }
 
-  .genre {
+.genre {
     display: inline-block;
     background-color: #ffcc00;
     color: #333;
